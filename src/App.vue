@@ -60,12 +60,9 @@ export default {
   },
 
   data: () => ({
-<<<<<<< HEAD
     drawer: false,
     group: null,
-=======
      
->>>>>>> 45586b6b18c2fd6eef994aaec05d2d896537abba
   }),
 };
 </script>
