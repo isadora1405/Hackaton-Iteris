@@ -20,7 +20,9 @@ const routes = [
   {
     path: '/quero-ajuda',
     component: QueroAjuda
-  }
+  },
+  
+
 ]
 
 const router = new VueRouter({
