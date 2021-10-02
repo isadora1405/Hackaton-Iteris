@@ -29,6 +29,11 @@ export default {
      
   }),
 };
+ ({
+    myStyle:{
+      backgroundColor:"#16a085" 
+    }
+  })
 </script>
 <style>
     

@@ -7,14 +7,14 @@
       <li
         v-for="site of sitesAjuda"
         :key="site.id"
-      >
+      > 
         <a class="link" :href="site.url">{{ site.nome }}</a>
         <v-row>
     <v-col
       v-for="n in 1"
       :key="n"
       class="d-flex child-flex"
-      cols="3"
+      cols="11"
     >
       <v-img
         :src="site.imagem"
@@ -70,5 +70,8 @@ export default {
   p{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     text-align: center;
+  }
+  .link{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
 </style>
