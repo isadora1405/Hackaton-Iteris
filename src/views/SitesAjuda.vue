@@ -8,7 +8,7 @@
         v-for="site of sitesAjuda"
         :key="site.id"
       > 
-        <a class="link" :href="site.link">{{ site.nome }}</a>
+        <a class="link" :href="site.link"  target="_blank">{{ site.nome }}</a>
         <v-row>
     <v-col
       v-for="n in 1"
