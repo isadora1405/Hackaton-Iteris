@@ -1,5 +1,6 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+import SitesAjuda from '../views/SitesAjuda'
 import Inicio from '../views/Inicio.vue'
 
 
@@ -11,6 +12,10 @@ const routes = [
     name:'Inicio',
     component: Inicio
   },
+  {
+    path: '/sites-ajuda',
+    component: SitesAjuda
+  }
   
 ]
 
