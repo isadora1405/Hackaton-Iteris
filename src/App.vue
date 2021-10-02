@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <Inicio/>
+    <router-view/>
     <v-app-bar
       color="yellow darken-2 accent-4"
       dense
