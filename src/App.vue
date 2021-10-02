@@ -1,5 +1,6 @@
 <template>
   <v-app>
+    <Inicio/>
     <v-app-bar
       color="yellow darken-2 accent-4"
       dense
@@ -54,9 +55,17 @@
 export default {
   name: 'App',
 
+  components: {
+    
+  },
+
   data: () => ({
+<<<<<<< HEAD
     drawer: false,
     group: null,
+=======
+     
+>>>>>>> 45586b6b18c2fd6eef994aaec05d2d896537abba
   }),
 };
 </script>
