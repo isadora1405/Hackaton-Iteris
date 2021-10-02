@@ -1,5 +1,5 @@
 <template>
-  <v-app>
+  <v-app :style="myStyle">
     <Inicio/>
     <v-app-bar
       color="yellow darken-2 accent-4"
@@ -60,9 +60,21 @@ export default {
   },
 
   data: () => ({
-    drawer: false,
-    group: null,
+      
+      drawer: false,
+      group: null,
+      myStyle:{
+      backgroundColor:"#16a085" 
+    }
+    
+   
+
      
   }),
 };
 </script>
+<style>
+  .configuracoes{
+    background: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  }  
+</style>
