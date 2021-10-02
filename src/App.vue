@@ -1,8 +1,7 @@
 <template>
-  <v-app>
-    <AppTopBar />
-    <Inicio/>
+  <v-app :style="myStyle">
 
+    <AppTopBar/>
     <v-main>
       <router-view/>
     </v-main>
@@ -16,7 +15,20 @@ export default {
 
   components: {
     AppTopBar
-  }
+  },
+
+  data: () => ({
+      
+      drawer: false,
+      group: null,
+      myStyle:{
+      backgroundColor:"#16a085" 
+    }
+    
+   
+
+     
+  }),
 };
  ({
     myStyle:{
@@ -24,3 +36,8 @@ export default {
     }
   })
 </script>
+<style>
+  .configuracoes{
+    background: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+  }  
+</style>
