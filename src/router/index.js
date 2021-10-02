@@ -18,7 +18,7 @@ const routes = [
     component: SitesAjuda
   },
   {
-    path: '/QueroAjuda',
+    path: '/quero-ajuda',
     component: QueroAjuda
   }
 ]

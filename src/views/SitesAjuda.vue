@@ -1,4 +1,5 @@
 <template>
+
   <div class="sites-ajuda">
     <h2>Procure ajuda</h2>
     <p>Se você precisa de ajuda ou conhece alguem que precise, nestes sites você pode encontrar  o que necessita</p>
@@ -7,7 +8,7 @@
         v-for="site of sitesAjuda"
         :key="site.id"
       >
-        <a :href="site.url">{{ site.nome }}</a>
+        <a class="link" :href="site.url">{{ site.nome }}</a>
         <v-row>
     <v-col
       v-for="n in 1"
@@ -59,3 +60,6 @@ export default {
   }
 }
 </script>
+<style scoped>
+
+</style>
