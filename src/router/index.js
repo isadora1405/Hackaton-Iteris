@@ -1,19 +1,22 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import Home from '../views/Home.vue'
 import SitesAjuda from '../views/SitesAjuda'
+import Inicio from '../views/Inicio.vue'
+
 
 Vue.use(VueRouter)
 
 const routes = [
   {
     path: '/',
-    component: Home
+    name:'Inicio',
+    component: Inicio
   },
   {
     path: '/sites-ajuda',
     component: SitesAjuda
   }
+  
 ]
 
 const router = new VueRouter({
