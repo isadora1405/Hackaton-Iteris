@@ -19,10 +19,9 @@ export default {
 
   data: () => ({
       
-      drawer: false,
-      group: null,
+      
       myStyle:{
-      backgroundColor:"#16a085" 
+      backgroundColor:"#B2EBF2" 
     }
     
    
@@ -32,7 +31,5 @@ export default {
 };
 </script>
 <style>
-  .configuracoes{
-    background: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
-  }  
+    
 </style>

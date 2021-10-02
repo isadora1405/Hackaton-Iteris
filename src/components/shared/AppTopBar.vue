@@ -1,25 +1,15 @@
 <template>
 
-<div class="app-top-bar">
+<div class="app-top-bar" >
     
    <v-app-bar app color="yellow darken-2 accent-4" dark>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
       <v-toolbar-title>Setembro Amarelo</v-toolbar-title>
     </v-app-bar>
 
-  <v-navigation-drawer
-      v-model="drawer"
-      absolute
-      temporary
-    >
-      <v-list
-        nav
-        dense
-      >
-        <v-list-item-group
-          v-model="group"
-          active-class="yellow--text text--accent-4"
-        >
+  <v-navigation-drawer :style="myStyle" v-model="drawer" absolute temporary>
+      <v-list nav dense>
+        <v-list-item-group v-model="group" active-class="yellow--text text--accent-4">
           <router-link to='/'>
           <v-list-item>
             <v-list-item-icon>
@@ -58,8 +48,11 @@
     name: 'AppTopBar',
     data() {
         return {
-        drawer: false,
-        group: null,
+          drawer: false,
+          group: null,
+          myStyle:{
+            backgroundColor:"#B2EBF2" 
+          }
         }
     }
     };

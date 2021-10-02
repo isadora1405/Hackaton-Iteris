@@ -5,16 +5,16 @@
         src="https://lh3.googleusercontent.com/proxy/H1nWTjnOwAuclzVZlWlpMO8KhI15V0HWJTf6O5QnDw3Byakb6k9zGPTm2O6f4GjaRhGl2NQmoBa6mJ90u-IBDON0ZKq_hwx2G16DeYRWUEdsCxTyU5mbbBgbUHAb">
         </v-img>
         <div> 
-            <v-card class="d-flex flex-row mb-6"  flat tile>
-                <v-icon class="mr-2" x-large >mdi-comment-multiple</v-icon>
-                <p class="texto-informativo">Busque informações, procure ajuda, fale abertamente sobre as emoções.</p>
+            <v-card :style="myStyle" class="d-flex flex-row mb-6"  flat tile mr-0>
+                <v-icon  color="black" class="mr-2" x-large >mdi-comment-multiple</v-icon>
+                <h3  class="texto-informativo text-center mb-0">Busque informações, procure ajuda, fale abertamente sobre as emoções.</h3>
             </v-card>
             
         </div>
 
-        <v-footer class="rodape" padless>
+        <v-footer  padless>
             <v-card class="flex" flat tile>
-                <v-card-title class="teal">
+                <v-card-title class="rodape">
                     <strong class="subheading">Siga-nos nas Redes Sociais</strong>
 
                     <v-spacer></v-spacer>
@@ -46,7 +46,10 @@ export default {
 
       myBackgroundStyle:{
           backgroundColor: "yellow darken-2 accent-4"
-      }
+      },
+      myStyle:{
+            backgroundColor:"#B2EBF2" 
+        }
         
 
     }
@@ -61,13 +64,13 @@ export default {
     }
     .texto-inicial{
         font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif!important;
-        font-size: 40px !important;
+        font-size: 35px !important;
     }
     .texto-informativo{
         font-family: sans-serif !important;
         font-size: 25px !important;
     }
     .rodape{
-        background-color: yellow darken-2 accent-4 !important;
+        background-color: #FFD600 !important;
     }
 </style>
