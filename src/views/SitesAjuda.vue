@@ -1,13 +1,14 @@
 <template>
+
   <div class="sites-ajuda">
     <h2>Procure ajuda</h2>
-    <p>Se você precisa de ajuda ou conhece alguem que precise, nestes sites você pode encontrar  o que necessita</p>
+    <p>Se você precisa de ajuda ou conhece alguem que precise, nestes sites você pode encontrar  o que necessita.</p>
     <ul>
       <li
         v-for="site of sitesAjuda"
         :key="site.id"
       >
-        <a :href="site.url">{{ site.nome }}</a>
+        <a class="link" :href="site.url">{{ site.nome }}</a>
         <v-row>
     <v-col
       v-for="n in 1"
@@ -19,6 +20,7 @@
         :src="site.imagem"
         aspect-ratio="1"
         class="grey lighten-2"
+        width="100%"
       >
         <template v-slot:placeholder>
           <v-row
@@ -59,3 +61,14 @@ export default {
   }
 }
 </script>
+<style>
+  h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    font-size: 50px;
+  }
+  p{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+  }
+</style>
