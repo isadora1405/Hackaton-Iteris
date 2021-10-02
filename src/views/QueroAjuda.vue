@@ -35,7 +35,7 @@
             Embora esse comportamento, muitas vezes, seja visto como uma forma de chamar a atenção, nunca deve ser ignorado, 
             especialmente se a pessoa está vivendo uma fase de depressão ou de grandes alterações na sua vida.</p>
 
-    </v-container>  
+    </v-container>
 </template>
 
 <script>
@@ -45,6 +45,12 @@ export default {
 
 </script>
 
-<style scoped>
+<style>
 
+h4{
+        font-family: 'tahoma';
+    };
+        p{
+        font-family: 'tahoma';
+    }
 </style>
