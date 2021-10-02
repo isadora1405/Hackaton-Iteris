@@ -2,7 +2,7 @@
 
   <div class="sites-ajuda">
     <h2>Procure ajuda</h2>
-    <p>Se você precisa de ajuda ou conhece alguem que precise, nestes sites você pode encontrar  o que necessita.</p>
+    <p>Se você está passando por um momento difícil e perceber que não consegue lidar com suas angústias sozinho, busque ajuda.<p>O apoio profissional pode ser muito importante para superar uma fase difícil ou receber o diagnóstico correto para um tratamento efetivo. Por mais complicada que seja a situação, há sempre uma saída.</p>
     <ul>
       <li
         v-for="site of sitesAjuda"
