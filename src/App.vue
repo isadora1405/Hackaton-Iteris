@@ -1,9 +1,8 @@
 <template>
   <v-app>
     <Inicio/>
-    <v-app-bar
+    <v-app-bar app
       color="yellow darken-2 accent-4"
-      dense
       dark>
       <v-app-bar-nav-icon @click="drawer = true"></v-app-bar-nav-icon>
       <v-toolbar-title>Setembro Amarelo</v-toolbar-title>
